@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ford - Contato</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+<body>
+    <header class="cabecalho">
+        <img src="../assets/img/logo-ford-256.png" alt="logo da Ford" class="cabecalho__image">
+        <nav class="cabecalho__topo">
+            <a href="index.html">Home</a>
+            <a href="lancamento.html">Lançamento</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="contato__main">
+        <div class="contato__layout">
+
+            <div class="contato__hero" aria-hidden="true">
+                <img src="assets/img/xls 2.2 diesel.jpg" alt="Ford XLS 2.2" class="contato__hero-img">
+            </div>
+
+            <section class="contato__container" aria-labelledby="titulo-contato">
+                <h2 id="titulo-contato">Fale com a Ford</h2>
+
+                <form class="contato__form" action="#" method="post" novalidate>
+                    <div class="form-row">
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" name="telefone" type="tel" placeholder="(00) 91234-5678" pattern="[\d\(\)\s\-+]*">
+                    </div>
+                    <div class="form-row">
+                        <label for="tipo">Tipo do contato</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">-- selecione --</option>
+                            <option value="elogio">Elogio</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="solicitacao">Solicitação</option>
+                        </select>
+                    </div>
+                    <div class="form-row form-row--full">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+
+                    <div class="form-row form-row--full form-row--center">
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="rodape">
+        <section class="rodape__links">
+            <p class="descricaoRedes">REDES SOCIAIS</p>
+            <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR" target="_blank" rel="noopener"><img src="../assets/img/facebook-50.png" alt="Facebook"></a>
+            <a href="https://www.youtube.com/fordbrasil" target="_blank" rel="noopener"><img src="../assets/img/youtube-squared-50.png" alt="YouTube"></a>
+            <a href="https://www.instagram.com/fordbrasil" target="_blank" rel="noopener"><img src="../assets/img/instagram-logo-50.png" alt="Instagram"></a>
+        </section>
+        <p class="descricaoRodape">© 2025 Ford Motor Company. Todos os direitos reservados</p>
+        <img src="../assets/img/ford-96.png" alt="logo da ford" class="rodape__image">
+    </footer>
+</body>
+</html>

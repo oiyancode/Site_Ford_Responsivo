@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/ford-antenna');
+
+:root {
+    --color-rodape: #00274D;
+    --fonte-principal: 'Ford Antenna', sans-serif;
+    --cor-secundaria: rgb(244, 247, 255);
+    --cor-azul: #0004eb;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* mds link lancamento nao sai mais do luagr gracas a isso*/
+img, iframe, embed, object, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html, body { 
+  overflow-x: hidden;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato__main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--cor-azul);
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 2em 2%;
+}
+
+.cabecalho__image {
+    grid-column: 1;
+    justify-self: start;
+    height: 3em;
+}
+
+.cabecalho__topo {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    font-family: var(--fonte-principal);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lancamento {
+    display: flex;
+    justify-content: center;
+    padding: 2.5em 1em;
+}
+
+.container__apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+.carroPrincipal {
+    max-width: 100%;
+    height: auto;
+}
+
+.descricaoCarro {
+    font-family: var(--fonte-principal);
+}
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    background-color: var(--color-rodape);
+    padding: 1.5em 2% 1.5em 0;
+    gap: 1em;
+}
+
+.rodape__links {
+    display: flex;
+    justify-content: center; /* centraliza */
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap; /* deixa quebrar no mobile */
+}
+
+.descricaoRedes {
+    font-size: 1.5rem;
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+}
+
+.descricaoRodape {
+    grid-column: 2;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
+
+.rodape__image {
+    grid-column: 3;
+    justify-self: end;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        gap: 0.5em;
+    }
+    .cabecalho__image {
+        justify-self: center;
+    }
+    .cabecalho__topo {
+        grid-column: 1;
+    }
+
+    .rodape {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 1em;
+    }
+
+    .rodape__links {
+        gap: 0.1em;
+    }
+
+    .descricaoRedes {
+        font-size: 1rem;
+        margin: 0 1em;
+    }
+
+    .descricaoRodape {
+        font-size: 0.5rem;
+    }
+
+    .rodape__image {
+        justify-self: center;
+    }
+
+    .rodape__links img {
+    width: 20px;
+    height: auto;
+    display: inline-block;
+}
+}
