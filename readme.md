@@ -28,9 +28,9 @@ O objetivo foi criar um site institucional da Ford com **páginas interativas, r
 ---
 
 ## 📸 Demonstração
-- ![alt text](extra/screenshot02.png)
-- ![alt text](extra/screenshot01.png)
-- ![alt text](extra/screenshot03.png)
+- ![alt text](/extra/screenshot02.png)
+- ![alt text](/extra/screenshot01.png)
+- ![alt text](/extra/screenshot03.png)
 
 ---
 
@@ -38,4 +38,5 @@ O objetivo foi criar um site institucional da Ford com **páginas interativas, r
 1. Clone este repositório:  
    ```bash
    git clone https://github.com/seu-usuario/projeto-cimatec-frontend.git
+
 
