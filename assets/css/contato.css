@@ -1,6 +1,6 @@
 .contato__main {
     background: #fff;
-    padding: 2rem 0.5rem;
+    padding: 0.5em 0.5em;
     display: flex;
     justify-content: center;
 }
@@ -20,7 +20,6 @@
 
 .contato__hero-img {
     width: 60vw;
-    /*limite pra desktop*/
     max-width: 600px;
     height: auto;
     object-fit: cover;
@@ -87,20 +86,22 @@
 
 .btn-enviar {
     padding: 0.9rem 2.2rem;
-    border-radius: 10px;
+    border-radius: 150px;
     border: none;
     background-color: var(--cor-azul);
     color: var(--cor-secundaria);
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
+    transition: 0.2s;
     /* transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease; */
 }
 
 .btn-enviar:hover {
-    transform: scale(1.04);
-    background-color: #0028c7;
-    box-shadow: 0 10px 30px rgba(0,40,200,0.15);
+    transition: 0.2s;
+    font-size: 1.2rem;
+    background-color: var(--cor-azul);
+    box-shadow: 0 0 10px var(--cor-azul);
 }
 
 @media (min-width: 900px) {

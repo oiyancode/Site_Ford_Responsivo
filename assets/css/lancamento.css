@@ -74,12 +74,12 @@
 }
 
 .table__buttom {
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .buttom__compare {
     display: inline-block;
-    border: 2px solid darkblue;
+    border: 2px solid var(--cor-azul);
     padding: 1em 3em;
     border-radius: 150px;
     background-color: var(--cor-azul);
@@ -93,6 +93,8 @@
 
 .buttom__compare:hover {
     background-color: #003087;
+    box-shadow: 0 0 10px var(--cor-azul);
+    font-size: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -102,6 +104,10 @@
     align-items: center;
     width: 200%;
 }
+
+  .table__carros {
+    margin: 0.5em 1em;
+  }
 
   .table__carros th,
   .table__carros td {

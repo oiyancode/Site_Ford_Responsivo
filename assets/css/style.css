@@ -2,7 +2,7 @@
 
 :root {
     --color-rodape: #00274D;
-    --fonte-principal: 'Ford Antenna', sans-serif;
+    --fonte-principal: var("Arial, Helvetica, sans-serif");
     --cor-secundaria: rgb(244, 247, 255);
     --cor-azul: #0004eb;
 }
@@ -78,6 +78,11 @@ a {
     font-weight: 500;
 }
 
+.cabecalho__topo a:active {
+    color: black;
+
+}
+
 .lancamento {
     display: flex;
     justify-content: center;
@@ -114,12 +119,13 @@ a {
     display: flex;
     justify-content: center; /* centraliza */
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
     flex-wrap: wrap; /* deixa quebrar no mobile */
 }
 
 .descricaoRedes {
-    font-size: 1.5rem;
+    padding-left: 0em;
+    font-size: 1rem;
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
 }
@@ -140,12 +146,12 @@ a {
     height: 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .cabecalho {
         grid-template-columns: 1fr;
         text-align: center;
         justify-content: center;
-        gap: 0.5em;
+        gap: 1em;
     }
     .cabecalho__image {
         justify-self: center;
@@ -157,7 +163,7 @@ a {
     .rodape {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1em;
+        gap: 0.5em;
     }
 
     .rodape__links {
